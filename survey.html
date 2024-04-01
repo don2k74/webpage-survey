@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<h2 id="company">KnowledgeForgeGames</h2>
+<p id="description">Please fill out survey to help us improve the app.</p>
+<form id="survey-form">
+    <fieldset>
+        <label for="name" id="name-label">Name<input id="name" type="text" name="name" placeholder="Enter your name" required /></label>
+        <label for="email" id="email-label">Email<input id="email" name="email" placeholder="Enter your email" type="email" required /></label>
+        <label for="number" id="number-label">Age(optional)<input id="number" name="age" placeholder="age" type="number" min="13" max="100" /></label>
+        <label for="dropdown">What option best describes you current role?<select id="dropdown" name="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Retail Business</option>
+            <option value="2">Retail Individual</option>
+            <option value="3">Consumer</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+        </select>
+        </label>
+    </fieldset>
+        <fieldset id="group1">
+            <label>Would you recommend Knowledge Forge Games to your friends</label>
+            <label for="definitely"><input id="definitely" value="1" type="radio" name="group1" class="inline" />Definitely</label>
+            <label for="maybe"><input id="maybe" type="radio" name="group1" value="2" class="inline" />Maybe</label>
+            <label for="not-sure"><input id="not-sure" type="radio" name="group1" value="3" class="inline" />Not Sure</label>
+            <label for="no"><input id="no" type="radio" name="group1" value="4" class="inline" />No</label>
+        </fieldset>
+        <label for="favorite">What is your favorite game genre?
+            <select id="favorite" name="favorite">
+                <option value=" ">Choose an option</option>
+                <option value="1">Role Playing</option>
+                    <option value="2">Sports</option>
+                    <option value="3">Action</option>
+                    <option value="4">Adventure</option>
+                    <option value="5">Puzzle</option>
+                    <option value="6">Platform</option>
+                    <option value="7">MMORPG</option>
+                    <option value="8">Strategy</option>
+                    <option value="9">Simulation</option>
+                    <option value="10">Fighting</option>
+                    <option value="11">Shooter</option>
+            </select>
+        </label>
+        <div id="checkboxes">
+            <label>What would you like to see improved?
+                <li><input type="checkbox" class="inline" value="1">Add more games</li>
+                <li><input type="checkbox" value="2" class="inline">Add more detailed descriptions</li>
+                <li><input type="checkbox" value="3" class="inline">Add subscription</li>
+                <li><input type="checkbox" value="4" class="inline">Change color scheme</li>
+            </label>
+        </div>
+        <label for="suggestions">Any suggestions or comments?
+            <textarea id="suggestions" name="suggestions" rows="3" cols="35" placeholder="Enter your comments here..."></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit" />
+</form>
+</body>
+</html>
